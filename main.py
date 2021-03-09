@@ -15,13 +15,13 @@ def create_menu_keyboard():
     return InlineKeyboardMarkup(row_width=2).add(
         InlineKeyboardButton('🌗 Перезагрузка',
                              callback_data=keyboards_query.new(action='remote_control', value='reboot')),
-        InlineKeyboardButton('➕ Грокмкость', callback_data=keyboards_query.new(action='remote_control',
-                                                                               value='amixer -D pulse sset Master 10%+')),
+        InlineKeyboardButton('➕ Громкость', callback_data=keyboards_query.new(action='remote_control',
+                                                                              value='amixer -D pulse sset Master 10%+')),
         InlineKeyboardButton('🌙 Выключение',
                              callback_data=keyboards_query.new(action='remote_control',
                                                                value='shutdown -P 0.30')),
-        InlineKeyboardButton('➖ Грокмкость', callback_data=keyboards_query.new(action='remote_control',
-                                                                               value='amixer -D pulse sset Master 10%-'))
+        InlineKeyboardButton('➖ Громкость', callback_data=keyboards_query.new(action='remote_control',
+                                                                              value='amixer -D pulse sset Master 10%-'))
     )
 
 
